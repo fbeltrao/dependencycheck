@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27617.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyCheck", "src\DependencyCheck\DependencyCheck.csproj", "{7EF20A02-B758-43A9-B659-8C317D4E8B45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{3B03BD65-43DC-483C-A702-9FE326FC7A38}"
+	ProjectSection(SolutionItems) = preProject
+		src\CommonFiles\DependencyCheckApplication.cs = src\CommonFiles\DependencyCheckApplication.cs
+		src\shared\Program.cs = src\shared\Program.cs
+		src\CommonFiles\ReferencedAssembly.cs = src\CommonFiles\ReferencedAssembly.cs
+		src\CommonFiles\ReferencedAssemblyCollection.cs = src\CommonFiles\ReferencedAssemblyCollection.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0F3203D-5BF5-434A-82C5-1D1DC1DAF17D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{84F91BD9-C7B2-4770-9CA8-B1D100360109}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyCheckCoreTest", "test\DependencyCheckCoreTest\DependencyCheckCoreTest.csproj", "{48A2971C-67F4-4464-9FFC-2CF72EAD4FAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-dependency-check", "src\dotnet-dependency-check\dotnet-dependency-check.csproj", "{E0347733-4CFB-41BC-907D-8D9F083ACA63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF20A02-B758-43A9-B659-8C317D4E8B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF20A02-B758-43A9-B659-8C317D4E8B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF20A02-B758-43A9-B659-8C317D4E8B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF20A02-B758-43A9-B659-8C317D4E8B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A2971C-67F4-4464-9FFC-2CF72EAD4FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A2971C-67F4-4464-9FFC-2CF72EAD4FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A2971C-67F4-4464-9FFC-2CF72EAD4FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A2971C-67F4-4464-9FFC-2CF72EAD4FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0347733-4CFB-41BC-907D-8D9F083ACA63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0347733-4CFB-41BC-907D-8D9F083ACA63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0347733-4CFB-41BC-907D-8D9F083ACA63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0347733-4CFB-41BC-907D-8D9F083ACA63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48A2971C-67F4-4464-9FFC-2CF72EAD4FAE} = {84F91BD9-C7B2-4770-9CA8-B1D100360109}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C11E7616-3275-4D0E-9FCD-129FE266BB16}
+	EndGlobalSection
+EndGlobal

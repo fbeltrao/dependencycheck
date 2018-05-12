@@ -1,0 +1,13 @@
+image: Visual Studio 2017
+branches:
+  only:
+  - master
+before_build:
+  # Display .NET Core version
+  - cmd: dotnet --version
+  # Restore
+  - cmd: dotnet restore
+environment:
+  global:
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1

@@ -1,0 +1,21 @@
+﻿<Project>
+  <Sdk Name="Microsoft.NET.Sdk" />
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>DependencyCheck</AssemblyName>
+    <RootNamespace>DependencyCheck</RootNamespace>
+    <ToolCommandName>dependencycheck</ToolCommandName>
+    <PackAsTool>true</PackAsTool>
+    <PackageTags>assembly;dependency;check</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\shared\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
